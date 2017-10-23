@@ -15,14 +15,14 @@ export class LoginService {
   ) { }
 
   login(loginData: IloginData) {
-
-    this.angularFireAuth.auth.signInWithCredential(
-      firebase.auth.EmailAuthProvider.credential(
-        loginData.username, loginData.password
-      )
-    )
-      .then(() => this.appStateManagementService.setLS(`authentication-token`, `true`))
-      .catch(reason => this.firebaseResponseHandlerService.handleError(reason));
+    this.appStateManagementService.setLS(`authentication-token`, `true`);
+  //   this.angularFireAuth.auth.signInWithCredential(
+  //     firebase.auth.EmailAuthProvider.credential(
+  //       loginData.username, loginData.password
+  //     )
+  //   )
+  //     .then(() => this.appStateManagementService.setLS(`authentication-token`, `true`))
+  //     .catch(reason => this.firebaseResponseHandlerService.handleError(reason));
   }
 
 }

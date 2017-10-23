@@ -11,7 +11,8 @@ export class LogoutService {
   ) { }
 
   logout() {
-    this.angularFireAuth.auth.signOut()
-      .then(() => this.appStateManagementService.removeAllLS());
+    this.appStateManagementService.removeAllLS();
+    // this.angularFireAuth.auth.signOut()
+    //   .then(() => this.appStateManagementService.removeAllLS());
   }
 }
