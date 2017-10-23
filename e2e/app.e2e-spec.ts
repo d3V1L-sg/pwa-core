@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('pwa-core App', () => {
+describe('appname App', () => {
   let page: AppPage;
 
   beforeEach(() => {

@@ -15,7 +15,7 @@ Platform:
 
 npm manifest: 
   {
-    "name": "pwa-core",
+    "name": "appname",
     "version": "0.0.0",
     "license": "MIT",
     "scripts": {
